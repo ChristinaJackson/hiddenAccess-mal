@@ -1,0 +1,27 @@
+Backdoors
+
+Most cases ult goal is to control target system and execute commands + see results
+Gives us access to the system:
+    Command execution, access file system, upload/download/keylogger, cameras, microphones etc
+There are already programs - this is for learning and understanding
+
+Backdoors have to be interactive
+    Connection needs to be established - one way to connect is by using sockets
+
+ Sockets:
+    Establishes connections and passes data
+
+
+Bind/Direct connections
+    initial connection from attacker to victim needs to be listening on a certain port
+    Not great because if the victim has firewall etc it will likely give a warning if an unknown port has been opening
+
+Reverse connection
+    When backdoor executed it will connect back to the attacker-
+    Attacker opens their own port and listen for incoming connections
+    Execute backdoor on victim, and that will connect victim -> attacker
+    Most firewalls will not trigger this as suspicious, especially if attacker is using commonly known ports
+
+
+
+
